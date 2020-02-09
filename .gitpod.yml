@@ -3,7 +3,7 @@ image:
 
 vscode:
   extensions:
-    - Davli.clojure@3.7.1
+    - avli.clojure@0.12.0:3OhMaH4jHCZmn80hl1OXkw==
 
 # List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
 ports:
@@ -12,14 +12,5 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: lein -v # runs during prebuild
-    command: lein -v # echo 'start script'
-
-
-#Name: Clojure
-#Id: avli.clojure
-#Description: Clojure nREPL support for Visual Studio Code
-#Version: 0.12.0
-#Publisher: Andrey Lisin
-#VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=avli.clojure
-#https://marketplace.visualstudio.com/_apis/public/gallery/publishers/avli/vsextensions/clojure/0.12.0/vspackage
+  - init: echo "done"# runs during prebuild
+    command: lein -v && cd tutorial/ && lein run && cd $HOME # echo 'start script'
