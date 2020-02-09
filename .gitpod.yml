@@ -13,4 +13,5 @@ ports:
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - init: echo "done" # runs during prebuild
-    command: lein -v && cd tutorial/ && lein run && cd $HOME # echo 'start script'
+    command: export PS1="\[\e]0;\u@: \w\a\]\[\e]0;\u@: \w\a\]\n\[\033[32m\][\w]\[\033[0m\]\$(__git_ps1)\n\[\033[1;36m\]\u@\[\033[32m\] $ \[\033[0m\]
+" && lein -v && cd tutorial/ && lein run && cd .. # echo 'start script'
