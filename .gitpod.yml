@@ -5,6 +5,8 @@ vscode:
   extensions:
     - avli.clojure@0.12.0:3OhMaH4jHCZmn80hl1OXkw==
 
+    - pedrorgirardi.vscode-cljfmt@0.0.16:9LU311y4MmLtfm/a4Cpqmg==
+
 # List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 3000
